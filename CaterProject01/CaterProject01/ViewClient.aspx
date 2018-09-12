@@ -49,10 +49,6 @@
                 <label>Zip:</label>
                 <asp:Label ID="lblZip" runat="server"></asp:Label>
                 <br />
-
-                <label>Name:</label>
-                <asp:Label ID="Label5" runat="server"></asp:Label>
-                <br />
             </div>
         </div>
     </form>
