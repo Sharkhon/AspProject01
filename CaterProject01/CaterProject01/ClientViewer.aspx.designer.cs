@@ -10,7 +10,7 @@
 namespace CaterProject01 {
     
     
-    public partial class ViewClient {
+    public partial class ClientViewer {
         
         /// <summary>
         /// ClientViewForm control.
