@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="App_Data\AthMan.mdb" />
     <Content Include="ClientViewer.aspx" />
+    <Content Include="ContactList.aspx" />
     <Content Include="style\style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -80,6 +81,13 @@
     <Compile Include="ClientViewer.aspx.designer.cs">
       <DependentUpon>ClientViewer.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ContactList.aspx.cs">
+      <DependentUpon>ContactList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactList.aspx.designer.cs">
+      <DependentUpon>ContactList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.Master.cs">
       <DependentUpon>Default.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -88,6 +96,7 @@
       <DependentUpon>Default.Master</DependentUpon>
     </Compile>
     <Compile Include="Model\Client.cs" />
+    <Compile Include="Model\ClientList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

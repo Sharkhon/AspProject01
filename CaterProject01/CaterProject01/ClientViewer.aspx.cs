@@ -13,7 +13,7 @@ namespace CaterProject01
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void ddlClients_SelectedIndexChanged(object sender, EventArgs e)
@@ -29,7 +29,7 @@ namespace CaterProject01
 
             DataRowView row = data[0];
 
-            this.updateClientView(new Client()
+            Client currentClient = new Client()
             {
                 ID = Convert.ToInt32(row["ClientID"]),
                 Address = row["Address"].ToString(),
@@ -39,7 +39,11 @@ namespace CaterProject01
                 PhoneNumber = row["Phone"].ToString(),
                 Email = row["Email"].ToString(),
                 Name = row["Name"].ToString()
-            });
+            };
+
+            Session["CurrentClient"] = currentClient;
+
+            this.updateClientView(currentClient);
 
         }
 
@@ -52,6 +56,16 @@ namespace CaterProject01
             this.lblPhone.Text = client.PhoneNumber;
             this.lblState.Text = client.State;
             this.lblZip.Text = client.Zip;
+        }
+
+        protected void btnAddToContactList_Click(object sender, EventArgs e)
+        {
+            ClientList.GetClients().AddItem((Client)Session["CurrentClient"]);
+        }
+
+        protected void btnViewContactList_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
