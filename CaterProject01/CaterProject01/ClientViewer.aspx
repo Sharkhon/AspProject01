@@ -45,7 +45,7 @@
         <br/>
 
         <asp:Button ID="btnAddToContactList" runat="server" Text="Add to Contact List" OnClick="btnAddToContactList_Click" />
-        <asp:Button ID="btnViewContactList" runat="server" Text="Contact List" OnClick="btnViewContactList_Click" />
+        <asp:Button ID="btnViewContactList" runat="server" Text="Contact List" PostBackUrl="~/ContactList.aspx" />
         
     </form>
 

@@ -64,5 +64,10 @@ namespace CaterProject01.Model
             get => this.email;
             set => this.email = value;
         }
+
+        public string ViewOutput()
+        {
+            return this.name + ": " + this.phoneNumber + "; " + this.email;
+        }
     }
 }

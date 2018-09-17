@@ -3,6 +3,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
-    <asp:ListBox ID="lbxContactList" runat="server"></asp:ListBox>
+    <form runat="server">
+        <asp:ListBox ID="lbxContactList" runat="server" Width="494px"></asp:ListBox>
+    </form>
 
 </asp:Content>

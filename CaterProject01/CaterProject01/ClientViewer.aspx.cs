@@ -62,10 +62,5 @@ namespace CaterProject01
         {
             ClientList.GetClients().AddItem((Client)Session["CurrentClient"]);
         }
-
-        protected void btnViewContactList_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
