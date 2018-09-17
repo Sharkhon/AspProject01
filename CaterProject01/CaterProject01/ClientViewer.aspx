@@ -2,11 +2,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <header>
-        <h1>AthMan</h1>
-        <h2>"Helping to Manage the World's Athletes"</h2>
-    </header>
-
     <form id="ClientViewForm" runat="server">
         <asp:DropDownList ID="ddlClients" runat="server" DataSourceID="sdsAthManClientData" DataTextField="Name" DataValueField="ClientID" AutoPostBack="True" OnSelectedIndexChanged="ddlClients_SelectedIndexChanged"></asp:DropDownList>
         <asp:SqlDataSource ID="sdsAthManClientData" runat="server" ConnectionString="<%$ ConnectionStrings:AthManConnectionString %>" ProviderName="<%$ ConnectionStrings:AthManConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [Clients]"></asp:SqlDataSource>

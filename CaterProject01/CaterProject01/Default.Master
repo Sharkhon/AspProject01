@@ -9,7 +9,14 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
+
 <body>
+
+    <header>
+        <h1>AthMan</h1>
+        <h2>"Helping to Manage the World's Athletes"</h2>
+    </header>
+
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
     </asp:ContentPlaceHolder>
 </body>
