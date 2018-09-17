@@ -97,6 +97,7 @@
     </Compile>
     <Compile Include="Model\Client.cs" />
     <Compile Include="Model\ClientList.cs" />
+    <Compile Include="Model\Feedback.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
