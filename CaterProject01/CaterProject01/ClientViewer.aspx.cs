@@ -31,7 +31,7 @@ namespace CaterProject01
 
             Client currentClient = new Client()
             {
-                ID = Convert.ToInt32(row["ClientID"]),
+                ID = Convert.ToInt32(row["ClientID"] as string),
                 Address = row["Address"].ToString(),
                 City = row["City"].ToString(),
                 State = row["State"].ToString(),
