@@ -1,4 +1,55 @@
-﻿body {
+﻿html {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    background-color: lightgray;
+}
+header {
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 5px solid blue;
+}
+
+form {
+    padding-top: 20px;
+    background-color: snow;
+    padding-bottom: 15px;
+}
+
+header h1 {
+    padding-right: 20px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+    display: inline-block;
+    float: left;
+}
+
+.validation {
+    color: cornflowerblue;
+    margin-left: 10px;
+}
+
+.interior {
+    margin-left: 50px;
+}
+
+.MainButton {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    border-radius: 12px;
+    font-size: 24px;
+    background: blue;
+    color: white;
+}
+
+.button {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    border-radius: 12px;
+    font-size: 16px;
+    background: blue;
+    color: white;
+}
+
+#wrapper {
+    width: 80%;
+    margin: auto;
 }
 
 .left {

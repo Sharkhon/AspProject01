@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="ClientViewer.aspx.cs" Inherits="CaterProject01.ClientViewer" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <title>Ath Man : Client Viewer</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form id="ClientViewForm" runat="server">
@@ -39,8 +40,8 @@
         <br />
         <br/>
 
-        <asp:Button ID="btnAddToContactList" runat="server" Text="Add to Contact List" OnClick="btnAddToContactList_Click" />
-        <asp:Button ID="btnViewContactList" runat="server" Text="Contact List" PostBackUrl="~/ContactList.aspx" />
+        <asp:Button CssClass="button" ID="btnAddToContactList" runat="server" Text="Add to Contact List" OnClick="btnAddToContactList_Click" />
+        <asp:Button CssClass="button" ID="btnViewContactList" runat="server" Text="Contact List" PostBackUrl="~/ContactList.aspx" />
         
     </form>
 

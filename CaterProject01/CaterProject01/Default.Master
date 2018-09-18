@@ -4,7 +4,7 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="style/style.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -16,8 +16,9 @@
         <h1>AthMan</h1>
         <h2>"Helping to Manage the World's Athletes"</h2>
     </header>
-
-    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-    </asp:ContentPlaceHolder>
+    <div id="wrapper">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
 </body>
 </html>

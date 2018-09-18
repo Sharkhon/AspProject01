@@ -83,6 +83,7 @@ namespace CaterProject01
             this.rblProblemResolution.Enabled = false;
             this.rblServiceTime.Enabled = false;
             this.rblTechnicalEfficiency.Enabled = false;
+            this.rblContact.Enabled = false;
 
             this.txtComments.Enabled = false;
             this.cbxContact.Enabled = false;
@@ -94,6 +95,7 @@ namespace CaterProject01
             this.rblProblemResolution.Enabled = true;
             this.rblServiceTime.Enabled = true;
             this.rblTechnicalEfficiency.Enabled = true;
+            this.rblContact.Enabled = true;
 
             this.txtComments.Enabled = true;
             this.cbxContact.Enabled = true;
