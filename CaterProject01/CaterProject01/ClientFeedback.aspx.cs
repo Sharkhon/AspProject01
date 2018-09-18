@@ -9,14 +9,28 @@ using CaterProject01.Model;
 
 namespace CaterProject01
 {
+    /// <summary>
+    /// Client Feedback Code behind
+    /// <author>Daniel Cater</author>
+    /// </summary>
     public partial class ClientFeedback : System.Web.UI.Page
     {
+        /// <summary>
+        /// Handles the Load event of the Page control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         protected void Page_Load(object sender, EventArgs e)
         {
             this.disableControls();
             this.txtClientID.Focus();
         }
 
+        /// <summary>
+        /// Handles the click event of the btnSearch control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         protected void btnSearch_click(object sender, EventArgs e)
         {
             DataView data = (DataView)this.sdsClientData.Select(DataSourceSelectArguments.Empty);
@@ -60,6 +74,11 @@ namespace CaterProject01
             Session["CurrentClientIncidents"] = this.txtClientID.Text;
         }
 
+        /// <summary>
+        /// Handles the OnClick event of the btnSubmit control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         protected void btnSubmit_OnClick(object sender, EventArgs e)
         {
             Feedback feedback = new Feedback()
@@ -77,6 +96,9 @@ namespace CaterProject01
             Session["FeedbackComplete"] = true;
         }
 
+        /// <summary>
+        /// Disables the controls.
+        /// </summary>
         private void disableControls()
         {
             this.rblContact.Enabled = false;
@@ -90,6 +112,9 @@ namespace CaterProject01
             this.btnSubmit.Enabled = false;
         }
 
+        /// <summary>
+        /// Enables the controls.
+        /// </summary>
         private void enableControls()
         {
             this.rblProblemResolution.Enabled = true;
@@ -102,6 +127,9 @@ namespace CaterProject01
             this.btnSubmit.Enabled = true;
         }
 
+        /// <summary>
+        /// Clears the form.
+        /// </summary>
         private void clearForm()
         {
             this.rblTechnicalEfficiency.ClearSelection();
@@ -113,6 +141,11 @@ namespace CaterProject01
             this.cbxContact.Checked = false;
         }
 
+        /// <summary>
+        /// Handles the OnSelectedIndexChanged event of the lbxIncidents control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         protected void lbxIncidents_OnSelectedIndexChanged(object sender, EventArgs e)
         {
             this.clearForm();

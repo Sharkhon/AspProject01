@@ -9,13 +9,27 @@ using CaterProject01.Model;
 
 namespace CaterProject01
 {
+    /// <summary>
+    /// Client Viewer Code behind
+    /// <author>Daniel Cater</author>
+    /// </summary>
     public partial class ClientViewer : System.Web.UI.Page
     {
+        /// <summary>
+        /// Handles the Load event of the Page control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         protected void Page_Load(object sender, EventArgs e)
         {
             
         }
 
+        /// <summary>
+        /// Handles the SelectedIndexChanged event of the ddlClients control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         protected void ddlClients_SelectedIndexChanged(object sender, EventArgs e)
         {
             DataView data = (DataView) this.sdsAthManClientData.Select(DataSourceSelectArguments.Empty);
@@ -47,6 +61,10 @@ namespace CaterProject01
 
         }
 
+        /// <summary>
+        /// Updates the client view.
+        /// </summary>
+        /// <param name="client">The client.</param>
         private void updateClientView(Client client)
         {
             this.lblClientName.Text = client.Name;
@@ -58,6 +76,11 @@ namespace CaterProject01
             this.lblZip.Text = client.Zip;
         }
 
+        /// <summary>
+        /// Handles the Click event of the btnAddToContactList control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         protected void btnAddToContactList_Click(object sender, EventArgs e)
         {
             ClientList.GetClients().AddItem((Client)Session["CurrentClient"]);
