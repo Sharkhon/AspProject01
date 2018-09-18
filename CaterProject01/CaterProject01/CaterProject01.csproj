@@ -92,6 +92,7 @@
     <Content Include="ClientFeedback.aspx" />
     <Content Include="ClientViewer.aspx" />
     <Content Include="ContactList.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="FeedbackComplete.aspx" />
     <Content Include="style\style.css" />
     <Content Include="Web.config" />
@@ -117,6 +118,13 @@
     </Compile>
     <Compile Include="ContactList.aspx.designer.cs">
       <DependentUpon>ContactList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.Master.cs">
       <DependentUpon>Default.Master</DependentUpon>
