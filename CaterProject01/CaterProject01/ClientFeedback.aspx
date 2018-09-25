@@ -60,7 +60,7 @@
                 <asp:ListItem Value="Email">Email</asp:ListItem>
             </asp:RadioButtonList>
             <br />
-            <asp:Button CssClass="button" ID="btnSubmit" runat="server" OnClick="btnSubmit_OnClick" Text="Submit" PostBackUrl="~/FeedbackComplete.aspx" />
+            <asp:Button CssClass="button" ID="btnSubmit" runat="server" OnClick="btnSubmit_OnClick" Text="Submit"/>
         </div>
     </form>
 

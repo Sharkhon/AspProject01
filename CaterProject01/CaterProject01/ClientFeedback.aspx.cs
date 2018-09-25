@@ -97,7 +97,8 @@ namespace CaterProject01
                 ServiceTime = Convert.ToInt32(this.rblServiceTime.SelectedValue)
             };
 
-            Session["FeedbackComplete"] = true;
+            Session["FeedbackComplete"] = this.cbxContact.Checked;
+            Response.Redirect("~/FeedbackComplete.aspx");
         }
 
         /// <summary>
