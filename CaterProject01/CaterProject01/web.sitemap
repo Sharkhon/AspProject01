@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Default.aspx" title="Home"  description="Navigate to Home Page">
+    <siteMapNode title="Client Support">
+      <siteMapNode url="~/ClientFeedback.aspx" title="Complete Client Feedback" description="Navigate to Client Feedback"/>
+      <siteMapNode url="~/ContactUs.aspx" title="Contact Us" description="Navigate to Contact Us"/>
+    </siteMapNode>
+
+    <siteMapNode title="Administration">
+      <siteMapNode url="~/ClientViewer.aspx" title="Display Clients" description="Navigate to Display Clients"/>
+      <siteMapNode url="~/ContactList.aspx" title="Display Contacts" description="Navigate to Display Contacts"/>
+    </siteMapNode>
+
+    <siteMapNode url="~/SiteMap.aspx" title="Site Map"  description="Navigate to Site Map" />
+  </siteMapNode>
+</siteMap>

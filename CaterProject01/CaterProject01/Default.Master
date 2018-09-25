@@ -11,15 +11,31 @@
 </head>
 
 <body>
+    <form runat="server">
+    
+        <header>
+            <ul>
+                <li>
+                    <a href="Default.aspx"><h1>AthMan</h1></a>
+                    <h2>"Helping to Manage the World's Athletes"</h2>
+                </li>
+                
+                <li>
+                    <asp:Menu CssClass="navigation" ID="menNavigation" runat="server" DataSourceID="smdSiteMap" Orientation="Horizontal">
+                        <DynamicMenuItemStyle HorizontalPadding="10px" />
+                    </asp:Menu>
+                    <asp:SiteMapDataSource ID="smdSiteMap" runat="server" ShowStartingNode="False" />
+                </li>
+            </ul>
+        </header>
 
-    <header>
-        <h1>AthMan</h1>
-        <h2>"Helping to Manage the World's Athletes"</h2>
-    </header>
-    <div id="wrapper">
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        </asp:ContentPlaceHolder>
-    </div>
+        <div id="wrapper">
+            
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            
+        </div>
+    </form>
     <footer>Please contact us at 8-The-AthMan or email at <asp:HyperLink  runat="server" Text="info@athman.com" NavigateUrl="mailto:info@athman.com" /></footer>
 </body>
 </html>

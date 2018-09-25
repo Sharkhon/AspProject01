@@ -3,13 +3,11 @@
     <title>Ath Man : Home</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form id="form1" runat="server">
-        <div class="interior">
-            <h1>Welcome</h1>
-            <h2>Please select one of the options below to navigate through the site.</h2>
-            <asp:Button CssClass="MainButton" ID="btnGotoClientViewer" runat="server" Text="Client View" PostBackUrl="~/ClientViewer.aspx" />
-            <asp:Button CssClass="MainButton" ID="btnGotoClientFeedback" runat="server" Text="Client Feedback" PostBackUrl="~/ClientFeedback.aspx" />
-            <br/>
-        </div>
-    </form>
+    <div class="interior">
+        <h1>Welcome</h1>
+        <h2>Please select one of the options below to navigate through the site.</h2>
+        <asp:Button CssClass="MainButton" ID="btnGotoClientViewer" runat="server" Text="Client View" PostBackUrl="~/ClientViewer.aspx" />
+        <asp:Button CssClass="MainButton" ID="btnGotoClientFeedback" runat="server" Text="Client Feedback" PostBackUrl="~/ClientFeedback.aspx" />
+        <br/>
+    </div>
 </asp:Content>

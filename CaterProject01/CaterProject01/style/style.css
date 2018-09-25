@@ -2,24 +2,32 @@
     font-family: 'Roboto', 'Open Sans', sans-serif;
     background-color: lightgray;
 }
+
+ul {
+    list-style-type: none;  
+}
+
 header {
     width: 100%;
     padding-bottom: 15px;
     border-bottom: 5px solid blue;
 }
 
-form {
-    padding-top: 20px;
-    background-color: snow;
-    padding-bottom: 15px;
-}
 
 header h1 {
-    padding-right: 20px;
-    padding-bottom: 15px;
-    margin-left: 15px;
+    text-align: center;
+    color: blue;
+}
+
+header h2 {
+    text-align: center;
+    color: cornflowerblue;
+}
+
+header ul li {
+    padding-left: 10px;
+    padding-right: 10px;
     display: inline-block;
-    float: left;
 }
 
 footer {
@@ -70,9 +78,17 @@ a:hover {
     background: cornflowerblue;
 }
 
+.navigation {
+    padding-bottom: 20px;
+    font-size: 18pt;
+}
+
 #wrapper {
     width: 80%;
     margin: auto;
+    padding-top: 20px;
+    background-color: snow;
+    padding-bottom: 15px;
 }
 
 .left {

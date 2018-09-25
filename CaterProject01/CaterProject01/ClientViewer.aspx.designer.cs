@@ -13,15 +13,6 @@ namespace CaterProject01 {
     public partial class ClientViewer {
         
         /// <summary>
-        /// ClientViewForm control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm ClientViewForm;
-        
-        /// <summary>
         /// ddlClients control.
         /// </summary>
         /// <remarks>
