@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using CaterProject01.Model;
@@ -22,7 +23,27 @@ namespace CaterProject01
         /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (Session["CurrentClient"] == null)
+            {
+                DataView data = (DataView) this.sdsAthManClientData.Select(DataSourceSelectArguments.Empty);
+                DataRowView row = data[0];
+
+                Client currentClient = new Client()
+                {
+                    ID = Convert.ToInt32(row["ClientID"] as string),
+                    Address = row["Address"].ToString(),
+                    City = row["City"].ToString(),
+                    State = row["State"].ToString(),
+                    Zip = row["ZipCode"].ToString(),
+                    PhoneNumber = row["Phone"].ToString(),
+                    Email = row["Email"].ToString(),
+                    Name = row["Name"].ToString()
+                };
+
+                Session["CurrentClient"] = currentClient;
+            }
+
+            this.updateClientView();
         }
 
         /// <summary>
@@ -56,8 +77,7 @@ namespace CaterProject01
             };
 
             Session["CurrentClient"] = currentClient;
-
-            this.updateClientView(currentClient);
+            this.updateClientView();
 
         }
 
@@ -65,8 +85,10 @@ namespace CaterProject01
         /// Updates the client view.
         /// </summary>
         /// <param name="client">The client.</param>
-        private void updateClientView(Client client)
+        private void updateClientView()
         {
+            Client client = (Client)Session["CurrentClient"];
+
             this.lblClientName.Text = client.Name;
             this.lblAddress.Text = client.Address;
             this.lblCity.Text = client.City;
@@ -84,6 +106,12 @@ namespace CaterProject01
         protected void btnAddToContactList_Click(object sender, EventArgs e)
         {
             ClientList.GetClients().AddItem((Client)Session["CurrentClient"]);
+        }
+
+        protected void btnViewContactList_Click(object sender, EventArgs e)
+        {
+            Session["CurrentClient"] = null;
+            Response.Redirect("~/ContactList.aspx");
         }
     }
 }

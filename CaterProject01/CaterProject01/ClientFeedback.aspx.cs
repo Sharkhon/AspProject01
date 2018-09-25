@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.WebPages;
 using CaterProject01.Model;
 
 namespace CaterProject01
@@ -22,8 +23,11 @@ namespace CaterProject01
         /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.disableControls();
-            this.txtClientID.Focus();
+            if (this.lbxIncidents.SelectedValue.IsEmpty())
+            {
+                this.disableControls();
+                this.txtClientID.Focus();
+            }
         }
 
         /// <summary>
@@ -150,6 +154,11 @@ namespace CaterProject01
         {
             this.clearForm();
             this.enableControls();
+        }
+
+        protected void cbxContact_OnCheckedChanged(object sender, EventArgs e)
+        {
+            this.rfvContact.Enabled = this.cbxContact.Checked;
         }
     }
 }

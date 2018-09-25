@@ -140,10 +140,10 @@
     <Compile Include="FeedbackComplete.aspx.designer.cs">
       <DependentUpon>FeedbackComplete.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Model\Client.cs" />
-    <Compile Include="Model\ClientList.cs" />
-    <Compile Include="Model\Feedback.cs" />
-    <Compile Include="Model\Incident.cs" />
+    <Compile Include="App_Code\Client.cs" />
+    <Compile Include="App_Code\ClientList.cs" />
+    <Compile Include="App_Code\Feedback.cs" />
+    <Compile Include="App_Code\Incident.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

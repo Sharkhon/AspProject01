@@ -48,13 +48,14 @@
 
             <br />
             <br />
-            <asp:CheckBox ID="cbxContact" Text="Be contacted?" runat="server"/>   
+            <asp:CheckBox OnCheckedChanged="cbxContact_OnCheckedChanged" ID="cbxContact" Text="Be contacted?" runat="server" AutoPostBack="True"/>   
             <br />
             <br />
-            <label>Form of Contact</label><asp:RequiredFieldValidator CssClass="validation" ID="rfvContact" runat="server" ControlToValidate="rblContact">Pick a selection</asp:RequiredFieldValidator>
+            <label>Form of Contact</label><asp:RequiredFieldValidator Enabled="False" CssClass="validation" ID="rfvContact" runat="server" ControlToValidate="rblContact">Pick a selection</asp:RequiredFieldValidator>
             <br />
             <br />
             <asp:RadioButtonList Enabled="False" ID="rblContact" runat="server">
+                
                 <asp:ListItem Value="Phone">Phone</asp:ListItem>
                 <asp:ListItem Value="Email">Email</asp:ListItem>
             </asp:RadioButtonList>
