@@ -20,5 +20,6 @@
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
     </div>
+    <footer>Please contact us at 8-The-AthMan or email at <asp:HyperLink  runat="server" Text="info@athman.com" NavigateUrl="mailto:info@athman.com" /></footer>
 </body>
 </html>

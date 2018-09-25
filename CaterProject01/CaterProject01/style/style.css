@@ -22,6 +22,21 @@ header h1 {
     float: left;
 }
 
+footer {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: cornflowerblue;
+}
+
 .validation {
     color: cornflowerblue;
     margin-left: 10px;
@@ -29,7 +44,7 @@ header h1 {
 
 .interior {
     margin-left: 50px;
-}
+}   
 
 .MainButton {
     font-family: 'Roboto', 'Open Sans', sans-serif;
@@ -39,12 +54,20 @@ header h1 {
     color: white;
 }
 
+.MainButton:hover {
+    background: cornflowerblue;
+}
+
 .button {
     font-family: 'Roboto', 'Open Sans', sans-serif;
     border-radius: 12px;
     font-size: 16px;
     background: blue;
     color: white;
+}
+
+.button:hover {
+    background: cornflowerblue;
 }
 
 #wrapper {
