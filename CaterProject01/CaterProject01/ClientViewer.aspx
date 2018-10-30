@@ -42,6 +42,8 @@
 
         <asp:Button CssClass="button" ID="btnAddToContactList" runat="server" Text="Add to Contact List" OnClick="btnAddToContactList_Click" />
         <asp:Button CssClass="button" ID="btnViewContactList" runat="server" Text="Contact List" OnClick="btnViewContactList_Click" />
+        <br/><br/>
+        <asp:Label runat="server" ID="lblError" CssClass="error"></asp:Label>
     </div>
 
 </asp:Content>

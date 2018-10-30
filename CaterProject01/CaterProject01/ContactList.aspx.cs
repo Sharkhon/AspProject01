@@ -53,7 +53,15 @@ namespace CaterProject01
         /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         protected void btnRemoveClient_Click(object sender, EventArgs e)
         {
+            if (this.lbxContactList.SelectedValue == null)
+            {
+                this.lblError.Text = "Select a Client to remove first.";
+            }
+
+            this.lblError.Text = "";
+
             ClientList clients = (ClientList) Session["ClientList"];
+
             Client selectedClient = clients.Clients.Find(client => client.ID == Convert.ToInt32(this.lbxContactList.SelectedValue));
 
             clients.Clients.Remove(selectedClient);
@@ -73,7 +81,8 @@ namespace CaterProject01
         /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         protected void btnClearList_Click(object sender, EventArgs e)
         {
-            ((List<ListItem>)Session["ClientListBoxItems"]).Clear();
+            Session["ClientListBoxItems"] = null;
+            ClientList.GetClients().Clear();
             this.lbxContactList.Items.Clear();
         }
     }

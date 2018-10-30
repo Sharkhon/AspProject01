@@ -105,7 +105,15 @@ namespace CaterProject01
         /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         protected void btnAddToContactList_Click(object sender, EventArgs e)
         {
-            ClientList.GetClients().AddItem((Client)Session["CurrentClient"]);
+            try
+            {
+                ClientList.GetClients().AddItem((Client) Session["CurrentClient"]);
+                this.lblError.Text = "";
+            }
+            catch (ArgumentException exception)
+            {
+                this.lblError.Text = exception.Message;
+            }
         }
 
         protected void btnViewContactList_Click(object sender, EventArgs e)

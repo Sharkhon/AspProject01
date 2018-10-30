@@ -78,6 +78,11 @@ namespace CaterProject01.Model
         /// <param name="client">The client.</param>
         public void AddItem(Client client)
         {
+            if (this.clientList.Contains(client))
+            {
+                throw new ArgumentException("This user is already in the Contact List");
+            }
+
             this.clientList.Add(client);
         }
 

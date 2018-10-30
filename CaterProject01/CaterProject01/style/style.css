@@ -101,3 +101,7 @@ a:hover {
     float: left;
     width: 45%;
 }
+
+.error {
+    color: cornflowerblue;
+}

@@ -13,6 +13,9 @@
         <asp:Button CssClass="button" ID="btnGoToClientView" runat="server" Text="Select Additional Clients" PostBackUrl="~/ClientViewer.aspx" />
         <asp:Button CssClass="button" ID="btnRemoveClient" runat="server" Text="Remove Client" OnClick="btnRemoveClient_Click" />
         <asp:Button CssClass="button" ID="btnClearList" runat="server" Text="Clear List" OnClick="btnClearList_Click" />
+        <br/>
+        <br/>
+        <asp:Label runat="server" ID="lblError" CssClass="error"></asp:Label>
     </div>
 
 </asp:Content>
