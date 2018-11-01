@@ -105,3 +105,22 @@ a:hover {
 .error {
     color: cornflowerblue;
 }
+
+.incidentsTable {
+    width: 80%;
+    margin: auto;
+}
+
+td {
+    border: 1px solid lightgray;
+    height: 40px;
+    width: 25%;
+}
+table {
+    width: 100%;
+}
+
+th {
+    width: 25%;
+    border-left: 1px solid black;
+}

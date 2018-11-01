@@ -95,11 +95,13 @@
     <Content Include="ContactUs.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="FeedbackComplete.aspx" />
+    <Content Include="IncidentDisplay.aspx" />
     <Content Include="SiteMap.aspx" />
     <Content Include="style\style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\IncidentDisplayDb.cs" />
     <Compile Include="ClientFeedback.aspx.cs">
       <DependentUpon>ClientFeedback.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -153,6 +155,13 @@
     <Compile Include="App_Code\ClientList.cs" />
     <Compile Include="App_Code\Feedback.cs" />
     <Compile Include="App_Code\Incident.cs" />
+    <Compile Include="IncidentDisplay.aspx.cs">
+      <DependentUpon>IncidentDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IncidentDisplay.aspx.designer.cs">
+      <DependentUpon>IncidentDisplay.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SiteMap.aspx.cs">
       <DependentUpon>SiteMap.aspx</DependentUpon>
