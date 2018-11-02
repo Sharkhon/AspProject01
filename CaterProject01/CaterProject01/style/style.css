@@ -124,3 +124,17 @@ th {
     width: 25%;
     border-left: 1px solid black;
 }
+
+label {
+    display: inline-block;
+    width: 150px;
+}
+
+.create-block {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.create-block input{
+    margin-right: 30px;
+}
