@@ -18,5 +18,17 @@ namespace CaterProject01
         {
             throw new NotImplementedException();
         }
+
+        protected void dvInsertProduct_OnItemInserted(object sender, DetailsViewInsertedEventArgs e)
+        {
+            if (e.Exception != null)
+            {
+                this.lblError.Text = "Could not create item";
+            }
+            else
+            {
+                this.lblError.Text = "";
+            }
+        }
     }
 }
