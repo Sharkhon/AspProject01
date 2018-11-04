@@ -138,3 +138,11 @@ label {
 .create-block input{
     margin-right: 30px;
 }
+
+.pager td table tbody tr td {
+    width: auto;
+}
+
+.clientMaintenanceView {
+    height: 300px;
+}
