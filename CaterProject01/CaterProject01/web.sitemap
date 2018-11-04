@@ -11,6 +11,12 @@
       <siteMapNode url="~/ContactList.aspx" title="Display Contacts" description="Navigate to Display Contacts"/>
     </siteMapNode>
 
+    <siteMapNode title="Maintenance">
+      <siteMapNode url="~/ClientMaintenance.aspx" title="Maintain Clients" description="Navigate to Client Maintenance"/>
+      <siteMapNode url="~/Products.aspx" title="Maintain Products" description="Navigate to Product Maintenance"/>
+      <siteMapNode url="~/IncidentDisplay.aspx" title="Display Incidents" description="Navigate to Incident Display"/>
+    </siteMapNode>
+
     <siteMapNode url="~/SiteMap.aspx" title="Site Map"  description="Navigate to Site Map" />
   </siteMapNode>
 </siteMap>
