@@ -97,6 +97,7 @@
     <Content Include="Default.aspx" />
     <Content Include="FeedbackComplete.aspx" />
     <Content Include="IncidentDisplay.aspx" />
+    <Content Include="MaintainTechnicians.aspx" />
     <Content Include="Products.aspx" />
     <Content Include="SiteMap.aspx" />
     <Content Include="style\style.css" />
@@ -170,6 +171,13 @@
     </Compile>
     <Compile Include="IncidentDisplay.aspx.designer.cs">
       <DependentUpon>IncidentDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaintainTechnicians.aspx.cs">
+      <DependentUpon>MaintainTechnicians.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaintainTechnicians.aspx.designer.cs">
+      <DependentUpon>MaintainTechnicians.aspx</DependentUpon>
     </Compile>
     <Compile Include="Products.aspx.cs">
       <DependentUpon>Products.aspx</DependentUpon>

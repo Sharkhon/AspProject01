@@ -21,7 +21,7 @@
                 </li>
                 
                 <li>
-                    <asp:Menu CssClass="navigation" ID="menNavigation" runat="server" DataSourceID="smdSiteMap" Orientation="Horizontal">
+                    <asp:Menu CssClass="navigation" ID="menNavigation" runat="server" DataSourceID="smdSiteMap" Orientation="Horizontal" DynamicMenuItemStyle-BackColor="#CCCCCC">
                         <DynamicMenuItemStyle HorizontalPadding="10px" />
                     </asp:Menu>
                     <asp:SiteMapDataSource ID="smdSiteMap" runat="server" ShowStartingNode="False" />

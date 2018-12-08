@@ -14,6 +14,7 @@
     <siteMapNode title="Maintenance">
       <siteMapNode url="~/ClientMaintenance.aspx" title="Maintain Clients" description="Navigate to Client Maintenance"/>
       <siteMapNode url="~/Products.aspx" title="Maintain Products" description="Navigate to Product Maintenance"/>
+      <siteMapNode url="~/MaintainTechnicians.aspx" title="Maintain Technicians" description="Navigate to Technician Maintenance"/>
       <siteMapNode url="~/IncidentDisplay.aspx" title="Display Incidents" description="Navigate to Incident Display"/>
     </siteMapNode>
 
