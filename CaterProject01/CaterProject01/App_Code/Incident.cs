@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace CaterProject01.Model
+namespace CaterProject01
 {
     /// <summary>
     /// Incident Model

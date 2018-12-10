@@ -95,6 +95,7 @@
     <Content Include="ContactList.aspx" />
     <Content Include="ContactUs.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="DisplayIncidentByTechnician.aspx" />
     <Content Include="FeedbackComplete.aspx" />
     <Content Include="IncidentDisplay.aspx" />
     <Content Include="MaintainTechnicians.aspx" />
@@ -104,7 +105,10 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\IncidentDatabase.cs" />
     <Compile Include="App_Code\IncidentDisplayDb.cs" />
+    <Content Include="App_Code\Technician.cs" />
+    <Content Include="App_Code\TechnicianDatabase.cs" />
     <Compile Include="ClientFeedback.aspx.cs">
       <DependentUpon>ClientFeedback.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -153,6 +157,13 @@
     </Compile>
     <Compile Include="Default.Master.designer.cs">
       <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayIncidentByTechnician.aspx.cs">
+      <DependentUpon>DisplayIncidentByTechnician.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DisplayIncidentByTechnician.aspx.designer.cs">
+      <DependentUpon>DisplayIncidentByTechnician.aspx</DependentUpon>
     </Compile>
     <Compile Include="FeedbackComplete.aspx.cs">
       <DependentUpon>FeedbackComplete.aspx</DependentUpon>
